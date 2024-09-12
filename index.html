@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+</head>
+<body>
+    <header id="add-header">
+        <h1>BATTALION FORCE MANAGEMENT</h1>
+    </header>
+        <section id="add-section">
+            <form id="add-form">
+                <input type="text" name="fullname" placeholder="Full Name" id="name">
+                <input type="text" name="rank" placeholder="Rank" id="rank">
+                <input type="text" name="position" placeholder="Position" id="position">
+                <input type="text" name="platoon" placeholder="Platoon" id="platoon">
+                <input type="text" name="time" placeholder="Mission Time (Seconds)" id="mission-time">
+                <select name="status" id="add-select">
+                    <option value="active">Active</option>
+                    <option value="reserve">Reserve</option>
+                    <option value="retired">Retired</option>
+                </select>
+                <button id="add" type="submit">Add Personnel</button>
+            </form>
+        </section>
+        <div>
+            <h1>FORCES OVERVIEW</h1>
+        </div>
+        <main>
+            <table>
+                <thead>
+                    <th>
+                        <button>Full Name</button>
+                    </th>
+                    <th>bla</th>
+                    <th>bla</th>
+                    <th>bla</th>
+                    <th>bla</th>
+                    <th class="column-of-buttons">bla</th>
+                </thead>
+                <tr>
+                    <td>bla</td>
+                    <td>bla</td>
+                    <td>bla</td>
+                    <td>bla</td>
+                    <td>bla</td>
+                    <td class="column-of-buttons">
+                        <button class="remove">Remove</button>
+                        <button class="mission">Mission</button>
+                        <button class="edit">Edit</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>bla</td>
+                    <td>bla</td>
+                    <td>bla</td>
+                    <td>bla</td>
+                    <td>bla</td>
+                    <td class="column-of-buttons">
+                        <button class="remove">Remove</button>
+                        <button class="mission">Mission</button>
+                        <button class="edit">Edit</button>
+                    </td>
+                </tr>
+                
+                       
+            </table>
+        </main>
+
+        <section id="edit-section">
+            <header id="edit-header">
+                <h1>EDIT PERSONNEL</h1>
+            </header>
+            <main>
+                <form id="edit-form">
+                    <input type="text" placeholder="Full Name" id="name">
+                    <input type="text" placeholder="Rank" id="rank">
+                    <input type="text" placeholder="Position" id="position">
+                    <input type="text" placeholder="Platoon" id="platoon">
+                    <select name="status" id="edit-select">
+                        <option value="active">Active</option>
+                        <option value="reserve">Reserve</option>
+                        <option value="retired">Retired</option>
+                    </select>
+                    <input type="text" placeholder="Mission Time (Seconds)" id="mission-time">
+                    <button id="edit" type="submit">Save Changes</button>
+                    <button id="cancel">Cancel</button>
+                </form>
+            </main>
+        </section>
+    
+    <script src='script.js'></script>
+</body>
+</html>
